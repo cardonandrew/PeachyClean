@@ -27,7 +27,6 @@
 </head>
 
 <body>
-  <script>src="index.js"</script>
 
   <header id="header">
     <div class="container">
@@ -81,16 +80,16 @@
             <div class="box">
               <div class="icon"><a href=""><i class="fa fa-trophy"></i></a></div>
               <h4 class="title"><a href="">Peachy Interior</a></h4>
-              <h4 class="dollars">$150+</h4>
-              <p class="description">Trash Removal, Full Vacuuming, Light Stain Removal, Sanitizing all hard surfaces, UV protectant (dashboard, cup-holders, and doors), Interior Window Cleaning, Door Jambs, Trunk Cleaning, and FREE Peachy Clean Gift.</p>
+              <h4 class="dollars">$175+</h4>
+              <p class="description">Trash Removal, Full Vacuuming, Light Stain Removal, Sanitizating Hard Surfaces, UV Protectant & Dressing (dashboard, cup-holders, and doors), Interior Windows, Door Jambs, Floor Mats, Trunk, and FREE Peachy Clean Gift.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><a href=""><i class="fa fa-diamond"></i></a></div>
               <h4 class="title"><a href="">Premium Interior</a></h4>
-              <h4 class="dollars">$225+</h4>
-              <p class="description">Peachy Interior Detail PLUS Shampooing Carpets/Seats and Deep Cleaning Seats/Upholstery with an extractor. (This service will provide extra help to remove odors and kill bacteria. This will restore your car to look and smell brand new!) </p>
+              <h4 class="dollars">$250+</h4>
+              <p class="description">Peachy Interior Detail PLUS Shampooing Carpets/Seats and Deep Cleaning Seats/Upholstery with Pro Heat Extractor. (This service will provide extra help to remove odors and kill bacteria. This will restore your car to look and smell brand new!) </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
@@ -131,11 +130,38 @@
           <h3 class="section-title">Gallery</h3>
           <p class="section-description">Skip this section if you hate super clean cars!</p>
         </div>
+
+        
         
         <div class="row" id="portfolio-wrapper">
+
+          <div class="wrapper">
+            <div class="images">
+              <div class="img-1"></div>
+              <div class="img-2"></div>
+            </div>
+            <div class="slider">
+              <div class="drag-line">
+                <span></span>
+              </div>
+              <input type="range" min="0" max="100" value="50">
+            </div>
+          </div>
+          
+          <script>
+            const slider = document.querySelector(".slider input");
+            const img = document.querySelector(".images .img-2");
+            const dragLine = document.querySelector(".slider .drag-line");
+            slider.oninput = ()=>{
+              let sliderVal = slider.value;
+              dragLine.style.left = sliderVal + "%";
+              img.style.width = sliderVal + "%";
+            }
+          </script>
+
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
             <a href="">
-              <img src="img/portfolio/car3.jpg" alt="">
+              <img src="img/car3.jpeg" alt="">
             </a>
          </div>
 
@@ -147,25 +173,25 @@
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
             <a href="">
-              <img src="img/portfolio/car1.jpg" alt="">
+              <img src="img/car1.jpeg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-card">
             <a href="">
-              <img src="img/cleanseats.jpeg" alt="">
+              <img src="img/car4.jpeg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-card">
             <a href="">
-              <img src="img/wheel.jpeg" alt="">
+              <img src="img/car5.jpeg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-web">
             <a href="">
-              <img src="img/portfolio/car5.jpg" alt="">
+              <img src="img/wheel.jpeg" alt="">
             </a>
           </div>
 
@@ -177,7 +203,7 @@
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
             <a href="">
-              <img src="img/portfolio/car4.jpg" alt="">
+              <img src="img/cleanseats.jpeg" alt="">
             </a>
           </div>
 

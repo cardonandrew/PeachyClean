@@ -149,16 +149,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 54px;
   margin: 0;
   padding: 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 .logo2{
-  width: 350px;
-  height: 130px;
+  width: 40vw;
+  height: 15vw;
+  min-width: 350px;
+  min-height: 80px;
   margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
   padding: 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 .logosmall{
   width: 40px;
@@ -169,10 +171,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .headertitle{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 flex-wrap: wrap;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
 color: white;
 text-shadow: #000000 2px 2px 2px;
 }
@@ -184,6 +186,11 @@ text-shadow: #000000 2px 2px 2px;
   justify-content: space-around;
   color: white;
   }
+  .header3{
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-top:20px;
+    }
 #headerwelcome{
   font-size: xxx-large;
   font-weight: 600;

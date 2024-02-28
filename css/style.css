@@ -180,10 +180,11 @@ text-shadow: #000000 2px 2px 2px;
 }
 .headertitle2{
   display: flex;
+  width: 60vw;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: white;
   }
   .header3{
@@ -279,6 +280,27 @@ text-shadow: #000000 2px 2px 2px;
   background: #eda27c;
   border: 2px solid #eda27c;
 }
+#btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  
+}
+
+#btn-get-started:hover {
+  background: #eda27c;
+  border: 2px solid #eda27c;
+}
+
 #linkbuttonwhite{
   color:rgb(255, 255, 255);
   text-shadow: black .7px .7px .7px;
@@ -1172,3 +1194,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 60%;
   border-top-color: #fff;
 }
+
+.buttons {min-height:36px;padding:8px 16px;border-radius:4px;font-family:"Roboto";font-weight:700;line-height:20px;letter-spacing:.25px;color:white;border-width:0;cursor:pointer;white-space:break-spaces;word-break:break-word;color: rgb(255, 255, 255);
+  background-color: rgb(68, 114, 93);text-shadow: none;}

@@ -795,10 +795,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
-    align-items: center;
+    align-items: start;
+    background-position: fixed;
     /* justify-content: flex-end; */
   }
 }

@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #eda27c;
+  color: #f4bda1;
 }
 
 a:hover, a:active, a:focus {
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #eda27c;
+  background: #f4bda1;
   color: #000000;
 }
 
@@ -277,8 +277,8 @@ text-shadow: #000000 2px 2px 2px;
 }
 
 #hero .btn-get-started:hover {
-  background: #eda27c;
-  border: 2px solid #eda27c;
+  background: #f4bda1;
+  border: 2px solid #f4bda1;
 }
 #btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -297,8 +297,8 @@ text-shadow: #000000 2px 2px 2px;
 }
 
 #btn-get-started:hover {
-  background: #eda27c;
-  border: 2px solid #eda27c;
+  background: #f4bda1;
+  border: 2px solid #f4bda1;
 }
 
 #linkbuttonwhite{
@@ -308,7 +308,7 @@ text-shadow: #000000 2px 2px 2px;
   transition:ease 400ms;
 }
 #linkbuttonwhite:hover{
-  color:#eda27c;
+  color:#f4bda1;
   transition:ease 400ms;
   text-shadow: none;
 }
@@ -410,7 +410,7 @@ text-shadow: #000000 2px 2px 2px;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #eda27c;
+  background-color: #f4bda1;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -447,7 +447,7 @@ text-shadow: #000000 2px 2px 2px;
 }
 
 .nav-menu ul li a:hover {
-  background: #eda27c;
+  background: #f4bda1;
   color: #fff;
 }
 
@@ -535,11 +535,11 @@ text-shadow: #000000 2px 2px 2px;
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #eda27c;
+  color: #f4bda1;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #eda27c;
+  color: #f4bda1;
 }
 
 #mobile-body-overly {
@@ -640,11 +640,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-direction: column;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #368f0f;
+  border: 2px solid #f4bda1;
 }
 
 #about .about-container .icon-box .icon i {
-  color: #368f0f;
+  color: #f4bda1;
   font-size: 24px;
 }
 
@@ -719,7 +719,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   width: 72px;
   height: 72px;
-  background: #eda27c;
+  background: #f4bda1;
 }
 
 #services .icon a {
@@ -733,15 +733,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box:hover .icon {
   background: #fff;
-  border: 2px solid #eda27c;
+  border: 2px solid #f4bda1;
 }
 
 #services .box:hover .icon i {
-  color: #eda27c;
+  color: #f4bda1;
 }
 
 #services .box:hover .icon a {
-  color: #eda27c;
+  color: #f4bda1;
 }
 
 #services .title {
@@ -762,12 +762,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .dollars{
   margin-bottom:10px;
-  color: #eda27c;
+  color: #f4bda1;
   font-weight: 500;
 }
 .dollars1{
   margin-bottom:10px;
-  color: #eda27c;
+  color: #f4bda1;
   font-weight: 500;
 }
 
@@ -812,8 +812,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #eda27c;
-  border: 2px solid #eda27c;
+  background: #f4bda1;
+  border: 2px solid #f4bda1;
 }
 
 /* Portfolio Section
@@ -854,7 +854,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  background: #368f0f;
+  background: #f4bda1;
   color: #fff;
 }
 
@@ -888,7 +888,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item .details {
   height: 50px;
-  background: #368f0f;
+  background: #f4bda1;
   position: absolute;
   width: 100%;
   height: 50px;
@@ -958,7 +958,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a:hover {
-  color: #eda27c;
+  color: #f4bda1;
 }
 
 #team .member .social i {
@@ -984,7 +984,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
   font-size: 32px;
-  color: #eda27c;
+  color: #f4bda1;
   float: left;
 }
 
@@ -1018,13 +1018,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .social-links a:hover {
-  background: #eda27c;
+  background: #f4bda1;
   color: #fff;
 }
 
 #contact .form #sendmessage {
-  color: #eda27c;
-  border: 1px solid #eda27c;
+  color: #f4bda1;
+  border: 1px solid #f4bda1;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1061,7 +1061,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #eda27c;
+  background: #f4bda1;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1069,17 +1069,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #eda27c;
+  background: #f4bda1;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #343b40;
+  background: #373e43;
   padding: 30px 0;
-  color: #818080;
-  font-size: 14px;
+  color: #6b6464;
+  font-size: 12px;
 }
 
 #footer .copyright {
@@ -1089,11 +1089,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .credits {
   padding-top: 10px;
   text-align: center;
-  font-size: 13px;
-  color: #636363;
+  font-size: 10px;
+  color: #6b6464;
 }
 .footerlink{
-  color: #818080;
+  color: #6b6464;
 }
 
 

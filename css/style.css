@@ -798,9 +798,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
-    align-items: start;
+    align-items:center;
     background-position: fixed;
-    /* justify-content: flex-end; */
+    justify-content: flex-start;
   }
 }
 #call-to-action .cta-btn {

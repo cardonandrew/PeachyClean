@@ -14,21 +14,21 @@ body {
 }
 
 a {
-  color: #f4bda1;
+  color: rgb(68, 114, 93);
 }
 
 a:hover, a:active, a:focus {
-  color: rgb(107, 81, 67);
+  color: rgb(33, 33, 33);
+  font-weight: 600;
   outline: none;
   text-decoration: none;
 }
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -992,11 +992,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info {
   color: #333333;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  height: 130px;
 }
 
 #contact .info i {
   font-size: 32px;
-  color: #f4bda1;
+  color: rgb(68, 114, 93);
   float: left;
 }
 
@@ -1005,6 +1012,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   line-height: 22px;
   font-size: 14px;
+  color: rgb(68, 114, 93)
 }
 
 #contact .info .email p {
@@ -1012,20 +1020,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .social-links {
+  display: flex;
+  width: 230px;
+  justify-content: space-evenly;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 #contact .social-links a {
-  font-size: 18px;
+  font-size: 37px;
   display: inline-block;
-  background: #333;
+  background: rgb(68, 114, 93);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   transition: 0.3s;
 }
 
@@ -1209,3 +1221,43 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .buttons {min-height:36px;padding:8px 16px;border-radius:4px;font-family:"Roboto";font-weight:700;line-height:20px;letter-spacing:.25px;color:white;border-width:0;cursor:pointer;white-space:break-spaces;word-break:break-word;color: rgb(255, 255, 255);
   background-color: rgb(68, 114, 93);text-shadow: none;}
+
+.profilepic{
+  width:190px;
+  margin-bottom: 10px;
+  border-radius: 200px;
+  border: 7px solid rgb(68, 114, 93)
+}
+.iconcontainer{ 
+  width:270px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+
+}
+.contactcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 75vw;
+}
+#contactcontainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items:center;
+  align-content: space-evenly;
+}
+.contactdiv{
+  margin-left: 20px;
+}
+.profile{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}

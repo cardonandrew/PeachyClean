@@ -774,7 +774,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/carinterior.jpg) fixed center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/newquotesection.jpg) fixed center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -785,8 +785,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   display: flex;
     align-items:center;
-    background-position: fixed;
-    justify-content: flex-start;
+    justify-content: center;
 }
 }
 
@@ -804,8 +803,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items:center;
-    background-position: fixed;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 #call-to-action .cta-btn {

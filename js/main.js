@@ -141,3 +141,41 @@ jQuery(document).ready(function ($) {
 
   // custom code
 });
+
+// Get the modal
+let modal = document.getElementById("calendarframe");
+
+// Get the button that opens the modal
+let btn = document.getElementById("btn-booking");
+
+// Get the <span> element that closes the modal
+let span = document.getElementById("closebtn");
+
+let booknow = document.getElementById("booknowbtn");
+let booknow2 = document.getElementById("booknowbtn2");
+
+booknow2.onclick = function () {
+  modal.style.height = "700px";
+  btn.style.display = "none";
+  span.style.display = "block";
+};
+
+booknow.onclick = function () {
+  modal.style.height = "700px";
+  btn.style.display = "none";
+  span.style.display = "block";
+};
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.height = "700px";
+  btn.style.display = "none";
+  span.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.height = "0px";
+  btn.style.display = "block";
+  span.style.display = "none";
+};

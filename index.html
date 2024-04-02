@@ -38,8 +38,8 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <!-- <li class="menu-active"><a href="#hero">Home</a></li> -->
+          <li><a id="booknowbtn" href="#book">Book Now</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#book">Book Now</a></li>
           <li><a href="#portfolio">Gallery</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -60,7 +60,7 @@
       <div class="headertitle2">
         <div id="btncontainer">
       <a class="btn-get-started" href="tel:3854480629">CALL</a>
-      <a class="btn-get-started" href="#book">BOOK NOW</a>
+      <a class="btn-get-started" id="booknowbtn2" href="#book">BOOK NOW</a>
       </div>
       </div>
     </div>
@@ -69,6 +69,17 @@
 
   <main id="main">
   
+    <section id="book">
+      <div id="calendar">
+      <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+      <!-- Google Calendar Appointment Scheduling begin -->
+      <iframe id="calendarframe" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2BcdaZkW8QofiqalWW6ULoPJCvt2hPMffyfnc1LlXxxyLz4FLfvcCbZ426SlyL7VEjsrrspDGV?gv=true" style="border: 0" width="100%" height="0px" frameborder="0"></iframe>
+      <button id="btn-booking">OPEN SCHEDULE <i class="fa fa-calendar"></i></button>
+      <button id="closebtn">CLOSE SCHEDULE <i class="fa fa-calendar-times-o"></i></button>
+      
+    </div>
+    </section>
+
     <!--==========================
       Services Section
     ============================-->
@@ -124,12 +135,6 @@
       </div>
     </section><!-- #call-to-action -->
 
-    <section id="book">
-      <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2BcdaZkW8QofiqalWW6ULoPJCvt2hPMffyfnc1LlXxxyLz4FLfvcCbZ426SlyL7VEjsrrspDGV?gv=true" style="border: 0" width="100%" height="700px" frameborder="0"></iframe>
-    </section>
-
     <!--==========================
       Portfolio Section
     ============================-->
@@ -139,8 +144,6 @@
           <h3 class="section-title">Gallery</h3>
           <p class="section-description">Skip this section if you hate super clean cars!</p>
         </div>
-
-        
         
         <div class="row" id="portfolio-wrapper">
 

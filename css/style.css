@@ -180,7 +180,7 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 color: white;
-text-shadow: #000000 2px 2px 2px;
+text-shadow: #000000 2px 2px 6px;
 }
 .headertitle2{
   display: flex;

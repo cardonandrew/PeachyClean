@@ -23,7 +23,6 @@ a:hover, a:active, a:focus {
   outline: none;
   text-decoration: none;
 }
-
 p {
   padding: 0;
 }
@@ -44,7 +43,7 @@ h1, h2, h3, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  /* background: #fff url("../img/preloader.svg") no-repeat center center; */
 }
 
 /* Back to top button */
@@ -102,7 +101,7 @@ h1, h2, h3, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -139,23 +138,20 @@ h1, h2, h3, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/shinycar3.jpg) top center;
+  background: url(../img/shinycar.jpg) top center;
   background-size:cover;
   position: relative;
 }
 
 .logo{
-  width: 180px;
-  height: 54px;
+  width: 50px;
+  height: 48px;
   margin: 0;
   padding: 0;
   object-fit: contain;
 }
 .logo2{
-  width: 40vw;
-  height: 15vw;
-  min-width: 350px;
-  min-height: 80px;
+  width: 58vmin;
   margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
@@ -188,14 +184,25 @@ text-shadow: #000000 2px 2px 2px;
   color: white;
   }
   .header3{
+    color: #ffffff;
+    text-shadow: none;
+    background: #00000031;
+    padding: 3vmin 2.5vmax;
+    font-size: 2.9vmin;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 20px;
     margin-left:10vw;
     margin-right:10vw;
-    margin-top:20px;
+    margin-top:10px;
+    max-width: 880px;
     }
 #headerwelcome{
-  font-size: xxx-large;
-  font-weight: 600;
+  font-size: 5.5vmin;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-weight: 800;
   padding: 0px;
+  margin-bottom: 10px;
 
 }
 
@@ -261,49 +268,40 @@ text-shadow: #000000 2px 2px 2px;
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-weight:bolder;
+  font-size: 1vmax 1vmin;
   display: inline-block;
-  padding: 8px 28px;
+  padding: 1vmin 1.5vmax;
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 4px solid #ffffff;
   color: #ffffff;
-  
+  border: #e6e6e6 3.5px solid;
+  background: #00000053;
+  text-wrap: nowrap;
 }
 
 #hero .btn-get-started:hover {
-  background: #f4bda1;
-  border: 2px solid #f4bda1;
+  background: #44725de1;
+  font-size: 2rgb(0, 0, 0)
 }
 #btn-get-started {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 16px;
-  letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 28px;
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 4px solid #ffffff;
   color: #ffffff;
-  
-}
-
-#btn-get-started:hover {
-  background: #f4bda1;
-  border: 2px solid #f4bda1;
+  text-shadow: none;
 }
 
 #linkbuttonwhite{
   color:rgb(255, 255, 255);
-  text-shadow: black .7px .7px .7px;
+  /* text-shadow: black .7px .7px .7px; */
   font-weight: 600;
   transition:ease 400ms;
 }
@@ -582,7 +580,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header .section-description {
   text-align: center;
-  padding-bottom: 10px;
+  font-size: 2vmin;
+  padding-bottom: 5px;
   color: #999;
 }
 
@@ -1121,11 +1120,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .wrapper{
   position: relative;
-  height: 40vw;
+  height: 35vw;
   width: 70vw;
   overflow: hidden;
   background: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .wrapper .images{
   height: 100%;
@@ -1135,7 +1134,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .wrapper .images .img-1{
   height: 100%;
   width: 100%;
-  background: url('/img/aftercarpet.jpeg') no-repeat;
+  background: url('/img/after.jpg') no-repeat;
   background-size: cover;
   /* background: url("images/car.jpg") no-repeat; */
 }
@@ -1144,7 +1143,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100%;
   width:50%;
   /* filter: blur(5px); */
-  background: url('/img/beforecarpet.jpeg')no-repeat;
+  background: url('/img/before1.jpeg')no-repeat;
+  background-clip: border-box;
   background-size: cover;
   /* background: url("images/car.png") no-repeat; */
 }
@@ -1248,6 +1248,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-wrap: wrap;
   align-items:center;
   align-content: space-evenly;
+}
+#btncontainer{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items:center;
+  align-content: space-evenly;
+  width: 80vw;
 }
 .contactdiv{
   margin-left: 20px;

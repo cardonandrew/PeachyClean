@@ -153,6 +153,14 @@ let span = document.getElementById("closebtn");
 
 let booknow = document.getElementById("booknowbtn");
 let booknow2 = document.getElementById("booknowbtn2");
+let booknow3 = document.getElementById("booknowbtn3");
+let booknow4 = document.getElementById("booknowbtn4");
+
+booknow.onclick = function () {
+  modal.style.height = "700px";
+  btn.style.display = "none";
+  span.style.display = "block";
+};
 
 booknow2.onclick = function () {
   modal.style.height = "700px";
@@ -160,11 +168,23 @@ booknow2.onclick = function () {
   span.style.display = "block";
 };
 
-booknow.onclick = function () {
+booknow3.onclick = function () {
   modal.style.height = "700px";
   btn.style.display = "none";
   span.style.display = "block";
 };
+
+booknow4.onclick = function () {
+  modal.style.height = "700px";
+  btn.style.display = "none";
+  span.style.display = "block";
+};
+
+// btnbook.onclick = function () {
+//   modal.style.height = "700px";
+//   btn.style.display = "none";
+//   span.style.display = "block";
+// };
 
 // When the user clicks the button, open the modal
 btn.onclick = function () {

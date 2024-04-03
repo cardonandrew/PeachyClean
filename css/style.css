@@ -1339,5 +1339,12 @@ align-items: center;
   font-weight: 600;
   font-size: larger;
   color: #447251;
+  text-shadow: .3px .3px 1px black;
+}
+#phone{
+  font-size: medium;
+  font-weight: 600;
+  margin-left: 15px;
+  color:#111;
 }
 

@@ -1339,7 +1339,7 @@ align-items: center;
   font-weight: 600;
   font-size: larger;
   color: #447251;
-  text-shadow: .3px .3px 1px black;
+  text-shadow: .3px .3px .3px black;
 }
 #phone{
   font-size: medium;

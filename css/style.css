@@ -199,7 +199,7 @@ text-shadow: #000000 2px 2px 6px;
     text-shadow: none;
     background: #00000030;
     padding: 3vmin 2.5vmax;
-    font-size: clamp(18px, 3vmin, 25px);
+    font-size: clamp(15px, 2.7vmin, 25px);
     text-align: left;
     font-weight: 500;
     border-radius: 20px;

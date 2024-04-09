@@ -772,18 +772,18 @@ padding:20px;
 
 #services .box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-width: 260px;
-  padding: 50px 20px;
-  margin: 5px;
+  width: 100%;
+  min-height: 550px;
+  min-width: 300px;
+  padding: 10px 10px;
   text-align: center;
   border: 1px solid #e6e6e6;
   position: relative;
-  background: #fafafa;
+  /* background: #fafafa; */
 }
-
 #services .icon {
   position: absolute;
   top: -36px;
@@ -824,30 +824,26 @@ padding:20px;
 }
 
 #services .title {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 33px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
-#services .title a {
-  color: #111;
-}
 
 #services .description {
   font-size: clamp(16px, 2vw, 18px);
+  font-weight: 600;
   line-height: 24px;
 }
 
 .dollars{
   margin-bottom:10px;
-  color: #f4bda1;
-  font-weight: 500;
+  font-weight: 800;
 }
 .dollars1{
   margin-bottom:10px;
-  color: #f4bda1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Call To Action Section
@@ -1367,3 +1363,70 @@ align-items: center;
   color:#111;
 }
 
+#serviceimg1{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-image: url(/img/service1.jpg);
+  background-position: left;
+  background-size: cover;
+}
+#serviceimg2{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-image: url(/img/service2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#serviceimg3{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-image: url(/img/service3.jpg);
+  background-position: 25% 100%;
+  background-size: cover;
+}
+#serviceimg4{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-image: url(/img/service4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#serviceimg5{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-image: url(/img/service5.jpg);
+  background-position: left;
+  background-size: cover;
+}
+#serviceimg6{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-image: url(/img/service6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.backgroundblur{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333a1;
+  padding: 40px 20px;
+  margin:10px;
+  width: 100%;
+  height:550px;
+  color:white;
+  transition: ease .5s;
+}
+.backgroundblur:hover{
+  background-color: #fafafade;
+  transition: ease .5s;
+  color:black;
+  margin: 0px;
+}

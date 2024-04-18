@@ -154,9 +154,7 @@ let span = document.getElementById("closebtn");
 let booknow = document.getElementById("booknowbtn");
 let booknow2 = document.getElementById("booknowbtn2");
 let booknow3 = document.getElementById("booknowbtn3");
-let booknow4 = document.getElementById("booknowbtn4");
 let booknow5 = document.getElementById("booknowbtn5");
-let booknow6 = document.getElementById("booknowbtn6");
 let booknow7 = document.getElementById("booknowbtn7");
 
 booknow.onclick = function () {
@@ -177,17 +175,7 @@ booknow3.onclick = function () {
   span.style.display = "block";
 };
 
-booknow4.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
 booknow5.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-booknow6.onclick = function () {
   modal.style.height = "700px";
   btn.style.display = "none";
   span.style.display = "block";

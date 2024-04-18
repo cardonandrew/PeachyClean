@@ -36,11 +36,16 @@ p {
   padding: 0;
 }
 
-h1, h2, h3, h5, h6 {
+h1, h2, h3, h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+}
+h6{
+  margin: 0 0 10px 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
 }
 
 /* Prelaoder */
@@ -135,7 +140,8 @@ h1, h2, h3, h5, h6 {
 }
 
 #header.header-fixed {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.857);
+  box-shadow: black 1px 1px 2px;
   padding: 15px 0;
   height: 75px;
   transition: all 0.5s;
@@ -155,8 +161,8 @@ h1, h2, h3, h5, h6 {
 }
 
 .logo{
-  width: 50px;
-  height: 48px;
+  width: 40px;
+  height: 42px;
   margin: 0;
   padding: 0;
   object-fit: contain;
@@ -383,9 +389,8 @@ text-shadow: #000000 2px 2px 6px;
 /* Nav Menu Essentials */
 .nav-menu, .nav-menu * {
   margin: 0;
-  padding: 0;
+  padding: 3px;
   list-style: none;
-  
 }
 
 .nav-menu ul {
@@ -440,6 +445,8 @@ text-shadow: #000000 2px 2px 6px;
 
 /* Nav Meu Container */
 #nav-menu-container {
+  display: flex;
+  justify-content: center;
   float: right;
   margin: 0;
 }
@@ -784,6 +791,20 @@ padding:20px;
   position: relative;
   /* background: #fafafa; */
 }
+#services .box2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  min-width: 300px;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  /* background: #fafafa; */
+}
 #services .icon {
   position: absolute;
   top: -36px;
@@ -824,26 +845,40 @@ padding:20px;
 }
 
 #services .title {
-  font-weight: 800;
-  font-size: 33px;
+  font-weight: 1000;
+  font-size: 32px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 
 #services .description {
-  font-size: clamp(16px, 2vw, 18px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  widsth: 90%;
+  font-size: clamp(15px, 2.5vmin, 17px);
   font-weight: 600;
   line-height: 24px;
+  list-style-type: none;
+  padding-left:0;
 }
 
 .dollars{
   margin-bottom:10px;
-  font-weight: 800;
+  font-weight: 1000;
+  font-size: 18px;
 }
 .dollars1{
   margin-bottom:10px;
   font-weight: 600;
+}
+
+.listitems{
+  margin: 1px 8.5px 1px 8.5px;
+
 }
 
 /* Call To Action Section
@@ -1384,7 +1419,7 @@ align-items: center;
   height: 100%;
   padding: 15px;
   background-image: url(/img/service3.jpg);
-  background-position: 25% 100%;
+  background-position: 15% 100%;
   background-size: cover;
 }
 #serviceimg4{
@@ -1400,12 +1435,20 @@ align-items: center;
   height: 100%;
   padding: 15px;
   background-image: url(/img/service5.jpg);
-  background-position: left;
+  background-position: center;
   background-size: cover;
 }
 #serviceimg6{
   width: 100%;
   height: 100%;
+  padding: 15px;
+  background-image: url(/img/service6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#addons{
+  width: 100%;
+  height: 350px;
   padding: 15px;
   background-image: url(/img/service6.jpg);
   background-position: center;
@@ -1429,4 +1472,18 @@ align-items: center;
   transition: ease .5s;
   color:black;
   margin: 0px;
+}
+
+.backgroundblur2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333a1;
+  padding: 40px 20px;
+  margin:10px;
+  width: 100%;
+  height:350px;
+  color:white;
+  transition: ease .5s;
 }

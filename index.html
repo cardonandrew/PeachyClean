@@ -22,7 +22,8 @@
   <script src="https://kit.fontawesome.com/b628bdae13.js" crossorigin="anonymous"></script>
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -58,12 +59,16 @@
     <div class="hero-container">
       <div class="headertitle">
       <div id="headerwelcome">WELCOME TO</div><img class="logo2" src="img/nopeachlogo2.jpg"/>
-      <h3 class="header3">Welcome to Utah County's premier mobile auto detailing service! We bring expert car cleaning right to your doorstep, saving you time and hassle. Our meticulous attention to detail ensures your vehicle looks and smells as fresh as a peach. Say hello to convenience and goodbye to dirty cars!</h3>
+      <h3 class="header3">Welcome to Utah County's premier mobile auto detailing service! We bring detailing right to your driveway, saving you time and hassle.</h3>
       </div>
       <div class="headertitle2">
         <div id="btncontainer">
       <a class="btn-get-started" href="tel:3854480629">CALL</a>
-      <a class="btn-get-started" id="booknowbtn2" href="#book">BOOK NOW</a>
+      <!-- Calendly link widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <a href="#book" class="btn-get-started" onclick="">Book Now</a>
+<!-- Calendly link widget end -->
       </div>
       </div>
     </div>
@@ -71,17 +76,6 @@
   </section><!-- #hero -->
 
   <main id="main">
-  
-    <section id="book">
-      <div id="calendar">
-      <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-      <!-- Google Calendar Appointment Scheduling begin -->
-      <iframe id="calendarframe" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2BcdaZkW8QofiqalWW6ULoPJCvt2hPMffyfnc1LlXxxyLz4FLfvcCbZ426SlyL7VEjsrrspDGV?gv=true" style="border: 0" width="100%" height="0px" frameborder="0"></iframe>
-      <button id="btn-booking">OPEN SCHEDULE <i class="fa fa-calendar"></i></button>
-      <button id="closebtn">CLOSE SCHEDULE <i class="fa fa-calendar-times-o"></i></button>
-      
-    </div>
-    </section>
 
     <!--==========================
       Services Section
@@ -90,64 +84,65 @@
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title"> Detail Services</h3>
-          <p class="section-description">Pricing depends on car size.</p>
+          <p class="section-description">Please choose a service</p>
         </div>
         <div class="row" id="servicerow">
-          <div class="col-lg-4 col-md-11 wow fadeInUp justify-content-center flex-nowrap" data-wow-delay="0.2s">
-            <div id="serviceimg1" class="box">
+          <!-- <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s"> -->
+            <div id="serviceimg1" class="box wow fadeInUp">
               <div class="backgroundblur">
               <div class="icon"><a><i class="fa fa-thumbs-up"></i></a></div>
-              <h4 class="title"><a>Premium Interior</a></h4>
+              <h4 class="title"><a>Peachy Interior</a></h4>
               <h6>2-3 hr.</h6>
-              <ul class="description"> <li class="listitems"><i class="fa-solid fa-trash"></i> &nbsp &nbsp Trash Removal</li><li class="listitems"><i class="fa-solid fa-snowplow"></i> &nbsp &nbsp Full Vacuuming</li>  <li class="listitems"><i class="fa-solid fa-hand-sparkles"></i> &nbsp &nbsp Hard Surfaces</li><li class="listitems"><i class="fa-solid fa-spray-can-sparkles"></i> &nbsp &nbsp Carpet/Seats</li><li class="listitems"><i class="fa-solid fa-mattress-pillow"></i> &nbsp &nbsp Floor Mats</li><li class="listitems"><i class="fa-solid fa-fill-drip"></i></i> &nbsp&nbsp Light Stains</li><li class="listitems"><i class="fa-solid fa-car-side"></i> &nbsp &nbsp Door Jambs</li><li class="listitems"><i class="fa-solid fa-truck-ramp-box"></i> &nbsp &nbsp Trunk Clean</li><li class="listitems"><i class="fa-solid fa-sun"></i> &nbsp&nbsp UV Protectant</li> <li class="listitems"><i class="fa-solid fa-panorama"></i> &nbsp &nbsp Interior Glass</li><li class="listitems"><i class="fa-solid fa-tree"></i> &nbsp &nbsp Car Freshener</li></ul>
-              <h4 class="dollars">2-row: $225  |  3-row: $249</h4>
-              <a id="booknowbtn3" href="#book"><button class="btn-book" id="booknowbtn3" href="#book">Book</button></a>
+              <ul class="description"> <li class="listitems"><i class="fa-solid fa-trash"></i> &nbsp &nbsp Trash Removal</li><li class="listitems"><i class="fa-solid fa-snowplow"></i> &nbsp &nbsp Full Vacuuming</li>  <li class="listitems"><i class="fa-solid fa-hand-sparkles"></i> &nbsp &nbsp Hard Surfaces</li><li class="listitems"><i class="fa-solid fa-fill-drip"></i></i> &nbsp&nbsp Light Stains</li><li class="listitems"><i class="fa-solid fa-mattress-pillow"></i> &nbsp &nbsp Floor Mats</li><li class="listitems"><i class="fa-solid fa-car-side"></i> &nbsp &nbsp Door Jambs</li><li class="listitems"><i class="fa-solid fa-truck-ramp-box"></i> &nbsp &nbsp Trunk Clean</li><li class="listitems"><i class="fa-solid fa-sun"></i> &nbsp&nbsp UV Protectant</li> <li class="listitems"><i class="fa-solid fa-panorama"></i> &nbsp &nbsp Interior Glass</li><li class="listitems"><i class="fa-solid fa-tree"></i> &nbsp &nbsp Car Freshener</li></ul>
+              <h4 class="dollars">2-row: $149  |  3-row: $199</h4>
+              <a class="booknowbtn" href="#book"><button class="btn-book" href="#book">Book</button></a>
             </div>
+          <!-- </div> -->
           </div>
-          </div>
-          <div class="col-lg-4 col-md-11 wow fadeInUp justify-content-center flex-nowrap" data-wow-delay="0.4s">
-            <div id="serviceimg5" class="box">
-              <div class="backgroundblur">
-              <div class="icon"><a><i class="fa fa-star"></i></a></div>
-              <h4 class="title"><a>Premium Combo</a></h4>
-              <br>
-              <h6>3-5 hr.</h6>
-              <br>
-              <p class="description"> Premium Interior Service PLUS Peachy Clean Exterior</p>
-              <br><br>
-              <h4 class="dollars">2-row: $299  |  3-row: $325</h4>
-              <br>
-              <a id="booknowbtn7" href="#book"><button class="btn-book">Book</button></a>
-              <br>
-              <h6>(Please book the morning slot.)</h6>
-            </div>
-          </div>
-          </div>
-          <div class="col-lg-4 col-md-11 wow fadeInUp justify-content-center flex-nowrap" data-wow-delay="0.4s">
-            <div id="serviceimg3" class="box">
+          <!-- <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"> -->
+          <!-- <div class="ow fadeInUp" data-wow-delay="0.4s"> -->
+            <div id="serviceimg3" class="box wow fadeInUp">
               <div class="backgroundblur">
               <div class="icon"><a><i class="fa fa-car"></i></a></div>
-              <h4 class="title"><a>Peachy Clean Exterior</a></h4>
+              <h4 class="title"><a>Peachy Exterior</a></h4>
               
               <h6>1-2 hr.</h6>
             
-              <ul class="description"> <li class="listitems"><i class="fa-solid fa-droplet"></i> &nbsp &nbsp Pre-soak</li> <li class="listitems"><i class="fa-solid fa-soap"></i> &nbsp &nbsp Pre-wash</li> <li class="listitems"><i class="fa-solid fa-hands-bubbles"></i> &nbsp &nbsp Hand Wash</li> <li class="listitems"><i class="fa-solid fa-bug-slash"></i> &nbsp &nbsp Bug Removal</li><li class="listitems"><i class="fa-solid fa-brush"></i>&nbsp &nbsp Wax / Sealant</li> <li class="listitems"><i class="fa-solid fa-truck-monster"></i> &nbsp &nbsp Wheels / Tires</li> <li class="listitems"><i class="fa-solid fa-spray-can-sparkles"></i> &nbsp &nbsp Tire Dressing</li> <li class="listitems"><i class="fa-solid fa-panorama"></i> &nbsp &nbsp Exterior Glass</li>  <li class="listitems"><i class="fa-solid fa-car-side"></i> &nbsp &nbsp Door Jambs</li></ul>
+              <ul class="description"> <li class="listitems"><i class="fa-solid fa-droplet"></i> &nbsp &nbsp Pre-wash/rinse</li><li class="listitems"><i class="fa-solid fa-hands-bubbles"></i> &nbsp &nbsp Hand Wash</li> <li class="listitems"><i class="fa-solid fa-bug-slash"></i> &nbsp &nbsp Bug Removal</li><li class="listitems"><i class="fa-solid fa-brush"></i>&nbsp &nbsp Wax / Sealant</li> <li class="listitems"><i class="fa-solid fa-truck-monster"></i> &nbsp &nbsp Wheels / Tires</li> <li class="listitems"><i class="fa-solid fa-spray-can-sparkles"></i> &nbsp &nbsp Tire Dressing</li> <li class="listitems"><i class="fa-solid fa-panorama"></i> &nbsp &nbsp Exterior Glass</li>  <li class="listitems"><i class="fa-solid fa-car-side"></i> &nbsp &nbsp Door Jambs</li></ul>
               <br>
               <h4 class="dollars">Only $99</h4>
               
-              <a id="booknowbtn5" href="#book"><button class="btn-book">Book</button></a>
+              <a class="booknowbtn" href="#book"><button class="btn-book">Book</button></a>
             </div>
+          <!-- </div> -->
+          
           </div>
+          <div id="serviceimg5" class="box wow fadeInUp">
+            <div class="backgroundblur">
+            <div class="icon"><a><i class="fa fa-star"></i></a></div>
+            <h4 class="title"><a>Peachy Clean Combo</a></h4>
+            
+            <h6>3-5 hr.</h6>
+            
+            <div class="cr">BEST VALUE</div>
+            <br><br>
+            <ul class="description"> <li class="listitems2">Peachy Interior + Peachy Exterior</li></ul>
+            <br>
+            <h4 class="dollars">2-row: $199  |  3-row: $249</h4>
+            <a class="booknowbtn" href="#book"><button class="btn-book">Book</button></a>
+          </div>
+          
+        <!-- </div> -->
+        </div>
+          <div id="addons" class="box2 wow fadeInUp">
+            <div class="backgroundblur2">
+            <div class="icon"><a><i class="fa fa-plus-circle"></i></a></div>
+            <h4 class="title"><a>Add Ons</a></h4>
+            <h7 class="dollars1">Carpet / Mat Shampoo - $50 | Seat Shampoo - $75 <br> <br> Booster Cleaning - $25 | Carpet Protectant - $25 <br> <br> Pet Hair Removal - $25 | Headlight Restoration - $50 <br> <br> Engine Bay Cleaning - $50 | Clay Bar Treatment - $50 </h7>
           </div>
       </div>
-      <div class="wow fadeInUp justify-content-center" data-wow-delay="0.4s">
-            <div id="addons" class="box2">
-              <div class="backgroundblur2">
-              <div class="icon"><a><i class="fa fa-plus-circle"></i></a></div>
-              <h4 class="title"><a>Add Ons</a></h4>
-              <h7 class="dollars1">Clay Bar Treatment - $50 | Seat Shampoo - $75 <br> <br> Booster Cleaning - $25 | Carpet Protectant - $25 <br> <br> Pet Hair Removal - $25 | Headlight Restoration - $50 <br> <br> Engine Bay Cleaning - $50</h7>
-            </div>
-          </div>
+      <!-- <div class="wow fadeInUp justify-content-center" data-wow-delay="0.4s"> -->
+          <!-- </div> -->
           </div>
     </section><!-- #services -->
 
@@ -169,6 +164,17 @@
       </div>
     </section><!-- #call-to-action -->
 
+    <section id="book">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <br><br><br>
+      <h3 class="section-title"> Schedule Appointment</h3>
+      <div class="calendly-inline-widget"
+      data-url="https://calendly.com/peachycleancar?hide_landing_page_details=1"
+      style="min-width:320px;height:750px;"></div>
+        </div></div>
+        </section>
+
     <!--==========================
       Portfolio Section
     ============================-->
@@ -178,7 +184,6 @@
           <h3 class="section-title">Gallery</h3>
           <p class="section-description">Skip this section if you hate super clean cars!</p>
         </div>
-        
         
     <div class="w3-content w3-display-container">
       <div class="wrapper mySlides">
@@ -224,7 +229,7 @@
       </div>
     </div>
 
-        <a id="btn-gall" class="btn-gall" href="#portfolio-wrapper">Show More</a>
+        <button id="btn-gall" class="btn-gall">Show More</button>
         <button id="closegallbtn" class="btn-gall" style="display: none">Close Gallery</button>
         
         <section class="row" id="portfolio-wrapper">
@@ -278,7 +283,6 @@
 
       </div>
     </section><!-- #portfolio -->
-
     <!--==========================
       About Us Section
     ============================-->
@@ -317,54 +321,49 @@
 
       </div>
     </section><!-- #about -->
-
     <!--==========================
       Contact Section
     ============================-->
+    <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Utah%20County,%20Utah+(Peachy%20Clean%20Mobile%20Detailing)&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
     <section id="contact">
+
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
           <p class="section-description">Please reach out for more information.</p>
         </div>
       </div>
-
       <div class="container wow fadeInUp">
         <div class="row justify-content-center">
-
           <div class="contactcontainer">
             <div id="contactcontainer">
+              <div class="profile">
+                <img class="profilepic"  src="img/profilepic.jpg">
+                <h4>Andrew Cardon</h4>
+                <p>Owner/Founder</p>
+              </div>
             <div class="info">
               <div class="iconcontainer">
-                <i class="fa fa-map-marker"></i>
-                <div class="contactdiv">We serve Utah County.</div>
+                <div class="contactdiv"><i class="fa fa-map-marker"></i> &nbsp &nbsp We serve Utah County.</div>
               </div>
-
+              <br>
               <div class="iconcontainer">
-                <i class="fa fa-envelope"></i>
-                <a class="contactdiv" href="mailto: peachycleancar@gmail.com"> peachycleancar@gmail.com</a>
+                <a class="contactdiv" href="mailto: peachycleancar@gmail.com"> <i class="fa fa-envelope"></i> &nbsp &nbsp peachycleancar@gmail.com</a>
               </div>
-
+              <br>
               <div class="iconcontainer">
-                <i class="fa fa-phone"></i>
-                <a class="contactdiv" href="tel:3854480629"> +1 (385)-448-0629</a>
-                
+                <a class="contactdiv" href="tel:3854480629"><i class="fa fa-phone"></i> &nbsp &nbsp +1 (385)-448-0629</a>
+              </div>
+              <br>
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61557173634177" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/peachycleancar" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/peachycleancar" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
-            <div class="profile">
-              <img class="profilepic"  src="img/profilepic.jpg">
-              <h4>Andrew Cardon</h4>
-              <p>Owner/Founder</p>
+            </div>
             </div>
           </div>
-          <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61557173634177" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/peachycleancar" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/peachycleancar" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-          </div>
-          </div>
-      
-            </div>
           </div>
 
         </div>

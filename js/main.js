@@ -142,66 +142,7 @@ jQuery(document).ready(function ($) {
   // custom code
 });
 
-// Get the modal
-let calendarmodal = document.getElementById("calendarframe");
-
-// Get the button that opens the modal
-let btn = document.getElementById("btn-booking");
-
-// Get the <span> element that closes the modal
-let span = document.getElementById("closebtn");
-
-let booknow = document.getElementById("booknowbtn");
-let booknow2 = document.getElementById("booknowbtn2");
-let booknow3 = document.getElementById("booknowbtn3");
-let booknow5 = document.getElementById("booknowbtn5");
-let booknow7 = document.getElementById("booknowbtn7");
-
-booknow.onclick = function () {
-  calendarmodal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-booknow2.onclick = function () {
-  calendarmodal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-booknow3.onclick = function () {
-  calendarmodal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-booknow5.onclick = function () {
-  calendarmodal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-booknow7.onclick = function () {
-  calendarmodal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-btn.onclick = function () {
-  calendarmodal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  calendarmodal.style.height = "0px";
-  btn.style.display = "block";
-  span.style.display = "none";
-};
-
 //Gallery btns
-//
-//
 
 // Get the modal
 let gallmodal = document.getElementById("portfolio-wrapper");

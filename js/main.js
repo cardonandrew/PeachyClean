@@ -142,77 +142,75 @@ jQuery(document).ready(function ($) {
   // custom code
 });
 
+//Gallery btns
+
 // Get the modal
-let modal = document.getElementById("calendarframe");
+let gallmodal = document.getElementById("portfolio-wrapper");
 
 // Get the button that opens the modal
-let btn = document.getElementById("btn-booking");
+let gallbtn = document.getElementById("btn-gall");
 
 // Get the <span> element that closes the modal
-let span = document.getElementById("closebtn");
+let gallspan = document.getElementById("closegallbtn");
 
-let booknow = document.getElementById("booknowbtn");
-let booknow2 = document.getElementById("booknowbtn2");
-let booknow3 = document.getElementById("booknowbtn3");
-let booknow4 = document.getElementById("booknowbtn4");
-let booknow5 = document.getElementById("booknowbtn5");
-let booknow6 = document.getElementById("booknowbtn6");
-let booknow7 = document.getElementById("booknowbtn7");
-
-booknow.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-booknow2.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-booknow3.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-
-booknow4.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-booknow5.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-booknow6.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-booknow7.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
-};
-// btnbook.onclick = function () {
-//   modal.style.height = "700px";
-//   btn.style.display = "none";
-//   span.style.display = "block";
-// };
-
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-  modal.style.height = "700px";
-  btn.style.display = "none";
-  span.style.display = "block";
+gallbtn.onclick = function () {
+  gallmodal.style.height = "100%";
+  gallmodal.style.display = "flex";
+  gallbtn.style.display = "none";
+  gallspan.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.height = "0px";
-  btn.style.display = "block";
-  span.style.display = "none";
+gallspan.onclick = function () {
+  gallmodal.style.height = "0px";
+  gallmodal.style.display = "none";
+  gallbtn.style.display = "block";
+  gallspan.style.display = "none";
 };
+
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+}
+
+function currentDiv(n) {
+  showDivs((slideIndex = n));
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {
+    slideIndex = 2;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+    console.log(slideIndex);
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
+}
+
+//
+//
+//
+
+let scroll_pos = 0;
+let section_pos = 2400;
+let toofar = 2900;
+
+let slider1 = document.getElementById("slider");
+let sliderimg = document.getElementById("img-2");
+
+window.addEventListener("scroll", function (e) {
+  scroll_pos = window.scrollY;
+  if (scroll_pos > section_pos && scroll_pos < toofar) {
+    // // Start the animation -> startAnimation
+    slider1.style.animation = "anim 2s 1s normal forwards";
+    sliderimg.style.animation = "imganim 2s 1s normal forwards";
+  }
+});

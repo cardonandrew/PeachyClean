@@ -1252,7 +1252,7 @@ gap:1rem;
   background: none;
   -webkit-appearance: none;
   appearance: none;
-  position: relative;
+  position: absolute;
   left: 100px;
   /* box-shadow: none; */
 }

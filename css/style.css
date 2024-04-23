@@ -1247,11 +1247,12 @@ gap:1rem;
 
 
 .slider input::-webkit-slider-thumb{
-  height: 200px;
-  width: 2px;
+  height:70vw;
+  width: 30px;
   background: none;
   -webkit-appearance: none;
   appearance: none;
+  left: 100px;
 }
 .slider .drag-line{
   width: 4px;

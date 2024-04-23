@@ -1252,8 +1252,9 @@ gap:1rem;
   background: none;
   -webkit-appearance: none;
   appearance: none;
+  position: relative;
   left: 100px;
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 .slider .drag-line{
   width: 4px;

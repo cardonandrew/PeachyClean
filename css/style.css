@@ -1239,7 +1239,7 @@ padding:20px;
   width: 3px;
   background: none;
   -webkit-appearance: none;
-  cursor: col-resize;
+  appearance: none;
 }
 .slider .drag-line{
   width: 3px;

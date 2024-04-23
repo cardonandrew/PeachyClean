@@ -1252,9 +1252,8 @@ gap:1rem;
   background: none;
   -webkit-appearance: none;
   appearance: none;
-  position: absolute;
-  left: 100px;
-  /* box-shadow: none; */
+  box-shadow: none;
+  left: 20%;
 }
 .slider .drag-line{
   width: 4px;
@@ -1263,6 +1262,7 @@ gap:1rem;
   min-height:285px;
   left: 100px;
   pointer-events: none;
+  position: absolute;
 }
 .slider .drag-line::before,
 .slider .drag-line::after{
@@ -1274,7 +1274,6 @@ gap:1rem;
 }
 .slider .drag-line::before{
   top: 0;
-  left:100px;
 }
 .slider .drag-line::after{
   bottom: 0;

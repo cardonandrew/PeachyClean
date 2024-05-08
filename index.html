@@ -26,7 +26,13 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+    />
+  <link href="
+    https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.css
+    " rel="stylesheet">
 </head>
 
 <body>
@@ -145,6 +151,232 @@
           <!-- </div> -->
           </div>
     </section><!-- #services -->
+
+
+    <!--REVIEW SECTION-->
+    <!---->
+    <!---->
+    <!---->
+
+  <section class="reviewsection">
+    <!-- <button class="switch-theme-btn">
+      <i class="bx bxs-sun"></i>
+    </button> -->
+  <div class="reviewcontainer">
+    <div id="reviewSwiper">
+      <h2 class="section-title">What our customers say</h2>
+
+      <div class="swiper customer-reviews">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">Peachy Clean did a fantastic job!</h3>
+            <p class="card-body">
+              They came and cleaned my car at my office, which was very convenient.
+
+              It looks like a brand new car - above and beyond. Thanks!!
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Tyler Priest</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">Andrew does an excellent work detailing vehicles.</h3>
+            <p class="card-body">
+              I recently used his services to surprise my husband with a clean, detailed truck and he loved it! Andrew is great to work with AND he details down in Santaquin area so do yourself a favor and book with him!
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Jamee Arthur</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">Peachy Clean detailing is amazing.</h3>
+            <p class="card-body">
+              - Very professional and friendly.
+              - Amazing results.
+              - On time as promised.
+              - Convenient at home service.
+              I am having all of my cars detailed. I highly recommend this company; results well worth the small $ investment - I.e. great value!!
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Richard Miller</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div><div class="swiper-slide review-card">
+              <i class="bx bxs-quote-left icon"></i>
+            <h3 class="card-title">Great service, great price</h3>
+            <p class="card-body">
+              Peachy clean came and detailed my vehicle great service great price super happy with them!
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Tate Johnson</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div><div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">Great quality of work.</h3>
+            <p class="card-body">
+              Great quality of work.
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Aravind Kumar</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">W.O.W. 🤩 My Outback has never looked so new!!!</h3>
+            <p class="card-body">
+              A gust of wind gave my car a dirt bath all over the inside!!!
+              Less than 48 hours later, it is spotless, thanks to Andrew’s VIP visit to my home<span id="dots">...</span><span id="more">. 🏡
+              He braved a very snowy day.
+              He is attentive to every detail,
+              has phenomenal customer service,
+              has the most creative business name,
+              and I really appreciate the peachy 🍑 gift he leaves at the end of the service.
+              You want to book him today! ⏰
+              Your life will never be the same!
+              A newly detailed car makes all the difference. ☺️
+              It is a stress reducer. 🧘🏻‍♀️
+            </span>
+            <button onclick="seeMore()" id="seeMoreBtn">Read more</button>
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Mandee Nelson</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">He Did an Amazing job</h3>
+            <p class="card-body">
+              We had them come to our house to detail My Lexus. -- Super clean to go to car show definitely recommend.
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Heather Bench</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">Amazing service!!!</h3>
+            <p class="card-body">
+              So happy I had my car cleaned! Andrew did a fantastic job!
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Amanda Neff</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="bx bxs-quote-left icon"></i>
+
+            <h3 class="card-title">Andrew did a great job on my truck detail.</h3>
+            <p class="card-body">
+              He was very professional and made everything look like new.
+            </p>
+
+            <div class="card-footer">
+              <div>
+                <span class="name">Bryan Cardon</span>
+                <div class="rate-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!--==========================
     Call To Action Section
@@ -395,8 +627,32 @@
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.js"></script>
+  <script>
+    let reviewsSwiper = new Swiper(".customer-reviews", {
+      spaceBetween: 20,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      autoplay: {
+        delay: 3000,
+      },
+  breakpoints: { 
+      350: {  
+         slidesPerView: 1.5,
+      },
+      550: {  
+         slidesPerView: 2,
+      },
+      700: {
+      slidesPerView: 3
+      },
+      1324: {  
+         slidesPerView: 5,
+      },
+    }
+    });
+    </script>
   <!-- Template Main Javascript File -->
   <script src="/js/main.js"></script>
 

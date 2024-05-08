@@ -1567,3 +1567,171 @@ align-items: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight:1000;
   } 
+
+  /*----------  GOOGLE FONTS  ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/*----------  VARIABLES  ----------*/
+:root {
+  /* COLORS */
+  --clr-text: #001122;
+  --clr-gold: #ffb81c;
+  --clr-card-bg: #ffffff;
+  --clr-body: #ffffff;
+  --clr-mute: rgba(82, 82, 82, 0.5);
+
+  --box-shadow-sm: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+  --border-radius: 15px;
+
+  /* SPACING */
+  --sp-xs: 0.25rem;
+  --sp-sm: 0.5rem;
+  --sp-md: 1rem;
+  --sp-lg: 1.5rem;
+  --sp-xl: 2rem;
+  --sp-2xl: 3rem;
+  --sp-3xl: 4rem;
+
+  /* TYPOGRAPHY */
+  --font-family: "Inter", sans-serif;
+
+  --fs-xl: 2rem; /* 32px */
+  --fs-lg: 1.5rem; /* 24px */
+  --fs-md: 1.125rem; /* 18px */
+  --fs-sm: 1rem; /* 16px */
+  --fs-xs: 0.875rem; /* 14px */
+
+  --fw-reg: 400;
+  --fw-md: 600;
+  --fw-bold: 700;
+}
+
+/*----------  CSS BASE  ----------*/
+
+.reviewsection.button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+/*----------  REVIEWS CAROUSEL  ----------*/
+.reviewsection {
+  height: 100%;
+  padding:30px;
+  background-color: var(--clr-body);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewsection.dark-mode {
+  color: #d1d0d0;
+  --clr-card-bg: #28282e;
+  --clr-body: #6e747a;
+}
+
+.switch-theme-btn {
+  color: white;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: var(--fs-xl);
+  background-color: var(--clr-mute);
+  z-index: 2000;
+  position: absolute;
+  right:35px;
+}
+
+.reviewcontainer{
+  max-width: 100vw;
+  margin:auto 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: var(--fs-xl);
+  margin-bottom: var(--sp-2xl);
+}
+
+.swiper {
+  /* to justify the box-shadow on cards */
+  padding: 10px;
+}
+
+.review-card {
+  display:block;
+  background-color: var(--clr-card-bg);
+  padding: var(--sp-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-sm);
+  margin-top:15px;
+  margin-bottom:15px;
+}
+#more {display: none;}
+
+#seeMoreBtn{
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  font-weight:bolder;
+  font-size: 11px;
+  display: inline-block;
+  padding: .6vmin 1vmax; 
+  border-radius: 50px;
+  transition: 0.1s;
+  color: #ffffff;
+  border: #0000003b 3px solid;
+  background: #000000b4;
+  text-wrap: nowrap;
+  margin-top:5px;
+}
+#dots{
+  font-size: 25px;
+}
+.review-card .icon {
+  font-size: 2rem;
+  color: var(--clr-mute);
+}
+
+.review-card .card-title {
+  font-size: 18px;
+  font-weight: var(--fw-md);
+  margin-top: var(--sp-xl);
+  margin-bottom: var(--sp-sm);
+}
+
+.review-card .card-body {
+  margin-bottom: 10px;
+}
+
+.review-card .card-footer {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: var(--sp-sm);
+  align-items: center;
+}
+
+.review-card .profile-photo {
+  max-width: 60px;
+  border-radius: 50%;
+}
+
+.review-card .name {
+  display: block;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-md);
+  margin-bottom: var(--sp-xs);
+}
+
+.review-card .rate-stars {
+  color: var(--clr-gold);
+  font-size: var(--fs-xs);
+}

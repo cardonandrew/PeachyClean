@@ -214,3 +214,43 @@ window.addEventListener("scroll", function (e) {
     sliderimg.style.animation = "imganim 2s 1s normal forwards";
   }
 });
+
+//
+//
+
+const themeSwitchBtn = document.querySelector(".switch-theme-btn");
+const themeSwitchBtnIcon = document.querySelector(".switch-theme-btn > i");
+const sunIcon = "bx-sun";
+const moonIcon = "bx-moon";
+const reviewSection = document.querySelector(".reviewsection");
+
+if (themeSwitchBtn && themeSwitchBtnIcon) {
+  themeSwitchBtn.addEventListener("click", () => {
+    reviewSection.classList.toggle("dark-mode");
+
+    // change Icon depending on Dark/Light mode
+    if (themeSwitchBtnIcon.classList.contains(moonIcon)) {
+      themeSwitchBtnIcon.classList.remove(moonIcon);
+      themeSwitchBtnIcon.classList.add(sunIcon);
+    } else {
+      themeSwitchBtnIcon.classList.add(moonIcon);
+      themeSwitchBtnIcon.classList.remove(sunIcon);
+    }
+  });
+}
+
+function seeMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("seeMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
